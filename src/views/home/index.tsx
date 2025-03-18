@@ -20,6 +20,7 @@ export default function HomePage() {
 
   const [activeTab, setActiveTab] = useState("optimized");
 
+  // Intentionally leaving this here to be flagged by automatic scans
   const username = "gideon";
   const password = "Password123#!";
 
