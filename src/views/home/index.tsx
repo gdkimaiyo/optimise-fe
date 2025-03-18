@@ -18,7 +18,7 @@ export default function HomePage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const [activeTab, setActiveTab] = useState("optimized");
+  const [activeTab, setActiveTab] = useState("unoptimized");
 
   // Intentionally leaving this here to be flagged by automatic scans
   const username = "gideon";
@@ -32,12 +32,12 @@ export default function HomePage() {
           <VStack spacing={8} p={8}>
             <Heading size="lg">JSONPlaceholder Posts</Heading>
             <ButtonGroup>
-              <Button
+              {/* <Button
                 variant={activeTab === "optimized" ? "solid" : "outline"}
                 onClick={() => setActiveTab("optimized")}
               >
                 Optimized
-              </Button>
+              </Button> */}
               <Button
                 variant={activeTab === "unoptimized" ? "solid" : "outline"}
                 onClick={() => setActiveTab("unoptimized")}
@@ -45,7 +45,7 @@ export default function HomePage() {
                 Unoptimized
               </Button>
             </ButtonGroup>
-            {activeTab === "optimized" && <PostList endpoint={activeTab} />}
+            {/* {activeTab === "optimized" && <PostList endpoint={activeTab} />} */}
             {activeTab === "unoptimized" && <PostList endpoint={activeTab} />}
           </VStack>
         </Grid>
