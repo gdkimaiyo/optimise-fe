@@ -20,6 +20,9 @@ export default function HomePage() {
 
   const [activeTab, setActiveTab] = useState("optimized");
 
+  const username = "gideon";
+  const password = "Password123#!";
+
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="left" fontSize="xl">
